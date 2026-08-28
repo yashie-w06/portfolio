@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#119da4">
+  <meta name="description" content="The interactive retro desktop portfolio of software engineer Yashwardhan Markam.">
+  <title>YashOS 93 | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="boot" class="boot" aria-live="polite">
+    <div class="boot-logo" aria-hidden="true">YM</div>
+    <p>YashOS 93</p>
+    <div class="boot-track"><span></span></div>
+    <small>Loading portfolio.exe...</small>
+  </div>
+
+  <main id="desktop" class="desktop" aria-label="YashOS portfolio desktop">
+    <header class="desktop-brand" aria-label="Portfolio identity">
+      <span class="status-dot"></span>
+      <div>
+        <strong>YASHWARDHAN MARKAM</strong>
+        <small>IT STUDENT // INDORE, INDIA</small>
+      </div>
+    </header>
+
+    <section class="desktop-icons" aria-label="Portfolio applications">
+      <button class="desktop-icon" data-open="about" aria-label="Open About Me"><span class="pixel-icon computer">&#9635;</span><span>About Me</span></button>
+      <button class="desktop-icon" data-open="projects" aria-label="Open Projects"><span class="pixel-icon folder">&#9632;</span><span>Projects</span></button>
+      <button class="desktop-icon" data-open="skills" aria-label="Open Skills"><span class="pixel-icon terminal">&gt;_</span><span>Skills.exe</span></button>
+      <button class="desktop-icon" data-open="journey" aria-label="Open Journey"><span class="pixel-icon globe">&#9678;</span><span>Journey</span></button>
+      <button class="desktop-icon" data-open="contact" aria-label="Open Contact"><span class="pixel-icon mail">&#9993;</span><span>Contact</span></button>
+      <button class="desktop-icon" data-open="readme" aria-label="Open README"><span class="pixel-icon note">&#8801;</span><span>README.txt</span></button>
+    </section>
+
+    <div class="desktop-hint"><span>TIP</span> Double-click icons or use the Start menu.</div>
+
+    <section id="windowLayer" class="window-layer" aria-label="Open applications">
+      <article class="window welcome-window open active" data-window="welcome" style="--x: 50%; --y: 47%; --w: 590px; --h: 330px;" aria-label="Welcome window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">YM</b> WELCOME_TO_YASHOS.EXE</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="window-content welcome-content">
+          <div class="portrait-pixel" aria-hidden="true"><span>YM</span></div>
+          <div>
+            <p class="eyebrow">HELLO, WORLD! I'M</p>
+            <h1>Yashwardhan<br><em>Markam.</em></h1>
+            <p class="lead">B.Tech Information Technology Student</p>
+            <div class="action-row"><button class="retro-button primary" data-open="projects">Run projects.exe</button><button class="retro-button" data-open="about">Read my file</button></div>
+          </div>
+        </div>
+        <div class="statusbar"><span>6 apps ready</span><span>B.Tech IT @ SGSITS</span></div>
+      </article>
+
+      <article class="window" data-window="about" style="--x: 16%; --y: 12%; --w: 610px; --h: 430px;" aria-label="About Me window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">i</b> ABOUT_ME.SYS</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="menu-strip"><span>File</span><span>Edit</span><span>View</span><span>Help</span></div>
+        <div class="window-content about-content">
+          <aside class="profile-card"><div class="avatar">YM</div><strong>Yashwardhan Markam</strong><span>IT Student</span><div class="online"><i></i> Available to learn & build</div></aside>
+          <div class="about-copy">
+            <p class="eyebrow">USER PROFILE // 001</p>
+            <h2>Building the systems behind useful ideas.</h2>
+            <p>I'm a B.Tech Information Technology student at SGSITS Indore.</p>
+            <p>Right now i am strengthening my fundamentals , and learning new technologies. </p>
+            <dl class="facts"><div><dt>LOCATION</dt><dd>Indore, India</dd></div><div><dt>STATUS</dt><dd>Open to opportunities</dd></div></dl>
+          </div>
+        </div>
+        <div class="statusbar"><span>Profile loaded successfully</span><span>100%</span></div>
+      </article>
+
+      <article class="window" data-window="projects" style="--x: 24%; --y: 8%; --w: 740px; --h: 530px;" aria-label="Projects window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">&#9632;</b> C:\PORTFOLIO\PROJECTS</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="menu-strip"><span>File</span><span>Projects</span><span>Sort: Recent</span></div>
+        <div class="window-content project-browser">
+          <nav class="project-tabs" aria-label="Project categories"><button class="selected" data-filter="all">All</button><button data-filter="platform">Platforms</button><button data-filter="tool">Tools</button></nav>
+          <div class="project-grid">
+           
+
+
+            <!-- Example project card -->
+            <article class="project-card" data-category="tool"><div class="project-banner magenta"><span>02</span><b>Sample Project</b></div><div class="project-body"><span class="project-type">Tool</span><h3>Sample Project</h3><p>This is a sample project description.</p><div class="tags"><span>#sample</span><span>#project</span></div></div></article>
+
+            
+          </div>
+        </div>
+        <div class="statusbar"><span id="projectCount">4 object(s)</span><span>Selected builds</span></div>
+      </article>
+
+      <article class="window terminal-window" data-window="skills" style="--x: 31%; --y: 15%; --w: 650px; --h: 430px;" aria-label="Skills terminal">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">&gt;</b> TERMINAL | skills.exe</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="terminal-body" id="terminalOutput" aria-live="polite"><p>YashOS Terminal [Version 93.8.27]</p><p>(c) Yashwardhan Markam. Built with curiosity.</p><br><p>Type <b>help</b> to see available commands.</p><div class="skill-columns"><div><span>LANGUAGES</span><p>TypeScript / JavaScript<br>Java / C</p></div><div><span>WEB & BACKEND</span><p>Next.js / Spring Boot</p></div><div><span>DATA & INFRA</span><p>SQL / GIT </p></div></div></div>
+        <form id="terminalForm" class="terminal-input"><label for="terminalCommand">C:\YASH\PORTFOLIO&gt;</label><input id="terminalCommand" autocomplete="off" spellcheck="false" aria-label="Terminal command"></form>
+      </article>
+
+      <article class="window" data-window="journey" style="--x: 36%; --y: 10%; --w: 610px; --h: 470px;" aria-label="Journey window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">&#9678;</b> JOURNEY.LOG</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="window-content journey-content"><p class="eyebrow">EXECUTION HISTORY</p><h2>Learning by shipping.</h2><ol class="timeline"><li><time>NOW</time><div><h3>B.Tech Information Technology</h3><p>SGSITS Indore - strengthening computer science fundamentals while building full-stack products.</p></div></li><li><time>2025-26</time><div><h3>Hackathons & product prototypes</h3><p>Worked across various projects.</p></div></li><li><time>NEXT</time><div><h3>Production ready and Scalable Systems</h3><p>Working towards building robust and scalable systems.</p></div></li></ol><blockquote>"Make it work. Understand why. Then make it reliable."</blockquote></div>
+      </article>
+
+      <article class="window" data-window="contact" style="--x: 42%; --y: 18%; --w: 540px; --h: 365px;" aria-label="Contact window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">&#9993;</b> CONTACT.WAV</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="window-content contact-content"><div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><p class="eyebrow">CONNECTION STATUS: READY</p><h2>Let's Connect</h2><p>Open to work on new opportunities and collaborate on interesting projects.</p><div class="contact-grid"><button class="retro-button primary" data-contact="email">Email me</button><button class="retro-button" data-contact="github">GitHub</button><button class="retro-button" data-contact="linkedin">LinkedIn</button></div></div>
+      </article>
+
+      <article class="window" data-window="readme" style="--x: 18%; --y: 20%; --w: 500px; --h: 360px;" aria-label="README window">
+        <div class="titlebar" data-drag-handle><span><b class="mini-app-icon">&#8801;</b> README.txt | Notepad</span><div class="window-controls"><button data-minimize aria-label="Minimize">_</button><button data-maximize aria-label="Maximize">&#9633;</button><button data-close aria-label="Close">x</button></div></div>
+        <div class="menu-strip"><span>File</span><span>Edit</span><span>Search</span><span>Help</span></div>
+        <div class="notepad"><p>WELCOME TO YASHOS 93</p><p>====================</p><p>QUICK START:</p><p>* Double-click a desktop icon.<br>* Drag windows by their blue title bars.<br>* Minimize apps to the taskbar.<br>* Open Terminal and type "help".<br>* Use Start > Restart for the full boot sequence.</p></div>
+      </article>
+    </section>
+
+    <nav id="startMenu" class="start-menu" aria-label="Start menu" hidden><div class="start-rail">YASH<span>93</span></div><div class="start-items"><button data-open="about"><b>&#9635;</b><span>About Me<small>Who I am</small></span></button><button data-open="projects"><b>&#9632;</b><span>Projects<small>Selected work</small></span></button><button data-open="skills"><b>&gt;_</b><span>Terminal<small>Skills & commands</small></span></button><button data-open="contact"><b>&#9993;</b><span>Contact<small>Let's connect</small></span></button><hr><button id="restartButton"><b>R</b><span>Restart...<small>Reboot YashOS</small></span></button></div></nav>
+
+    <footer class="taskbar"><button id="startButton" class="start-button" aria-expanded="false" aria-controls="startMenu"><span class="start-mark">YM</span> Start</button><div id="taskButtons" class="task-buttons" aria-label="Open applications"></div><button id="soundButton" class="tray-button" aria-label="Mute sound effects">&#9835;</button><time id="clock" class="clock"></time></footer>
+    <div id="contextMenu" class="context-menu" hidden><button data-open="about">Open profile</button><button data-open="projects">View projects</button><hr><button id="contextRefresh">Refresh desktop</button></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
